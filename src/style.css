@@ -1,0 +1,13 @@
+body {
+  max-width: 100% !important;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.todo-container {
+  flex: 1;
+  max-width: 550px;
+}
