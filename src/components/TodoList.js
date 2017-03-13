@@ -8,9 +8,6 @@ const TodoItem = ({ completed, title, onChange, onRemove }) => {
         <label>{title}</label>
         <button onClick={onRemove} className="destroy"></button>
       </div>
-      {
-        //<input className="edit" value="Create a TodoMVC template" />
-      }
     </li>
   );
 }
@@ -95,13 +92,13 @@ export default class TodoList extends React.Component {
 
           <ul className="filters">
             <li>
-              <a className={filter === 'all' ? 'selected' : null} onClick={this._showAll} href="javascript:void(0)">All</a>
+              <a className={filter === 'all' ? 'selected' : null} onClick={this._showAll} href="#">All</a>
             </li>
             <li>
-              <a className={filter === 'active' ? 'selected' : null} href="javascript:void(0)" onClick={this._showActive}>Active</a>
+              <a className={filter === 'active' ? 'selected' : null} href="#" onClick={this._showActive}>Active</a>
             </li>
             <li>
-              <a className={filter === 'completed' ? 'selected' : null} href="javascript:void(0)" onClick={this._showCompleted}>Completed</a>
+              <a className={filter === 'completed' ? 'selected' : null} href="#" onClick={this._showCompleted}>Completed</a>
             </li>
           </ul>
 
