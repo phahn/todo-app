@@ -22,7 +22,7 @@ import reducer from './redux/reducer';
 import { default as ReduxTodoList } from './redux/container';
 import { addTodo } from './redux/actions';
 
-const state = createStore(reducer);
+const state = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 state.dispatch(addTodo('Prepare slides'));
 state.dispatch(addTodo('Prepare Redux example'));
 state.dispatch(addTodo('Visit dotJS Paris'));

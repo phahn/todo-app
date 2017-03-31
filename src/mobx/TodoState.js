@@ -2,7 +2,7 @@ import { extendObservable, action, computed } from 'mobx';
 
 let id = 0;
 
-export default class CounterState {
+export default class TodoState {
   constructor() {
     extendObservable(this, {
       todos: [],

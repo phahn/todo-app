@@ -87,9 +87,7 @@ export default class TodoList extends React.Component {
           </ul>
         </section>
         <footer className="footer">
-
           <span className="todo-count"><strong>{activeCount}</strong> item left</span>
-
           <ul className="filters">
             <li>
               <a className={filter === 'all' ? 'selected' : null} onClick={this._showAll} href="#">All</a>
@@ -101,7 +99,6 @@ export default class TodoList extends React.Component {
               <a className={filter === 'completed' ? 'selected' : null} href="#" onClick={this._showCompleted}>Completed</a>
             </li>
           </ul>
-
           <button onClick={this.props.removeAllCompleted} className="clear-completed">Clear completed</button>
         </footer>
       </section>
